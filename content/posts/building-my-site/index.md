@@ -10,6 +10,10 @@ A scalable site.
 
 ## Introduction
 
+{{< alert >}}
+**Info:** This is not a full step by step guide, but one that can be used in combination with the standard guides available! Also I plan to update this after some time, so it will get better. 🙈
+{{< /alert >}}
+
 For those curious this guide is how I got this site up and running using a combination of Github, as the deployment automation and hosting of the site, and Hugo, a static website generator tool, using the Congo theme. This is all better documented on all the referenced sites, but this might help with bridging any gaps, or maybe provide a more concentrated interpretation of the above guides.
 
 The assumptions are that you know your way around the terminal and know how to use tools like `git`, `brew` (for macs) and modify your domain's DNS. 
@@ -51,30 +55,124 @@ E
 end
 {{< /mermaid >}}
 
+As shown, wherever you may be sourcing your markdown files, once they are pushed to GitHub then the magic starts happening. A GitHub Action will run on commits, running a hugo service to generate the html files and pushing them back to a specific branch, `gh_pages`. This branch is configured in the repository to be the source for the github site. On the other end, the DNS registrar has an `A Record` set so that it redirects to the GitHub Provided site. Once it is all set up, then all you need to do is update your Hugo files and push!
+
+## GitHub
+
+You should start by setting up your GitHub repository and various settings as needed. This will help prepare for the automations and configurations later.
+
+### Create Your Repo
+
+One thing that got me, was that since we want to point to use the GitHub Pages functionality, we have to name the repository `YOURUSERNAME.github.io`. There may be another way to do this, but this is what I did.
+
+Once created, go ahead and clone it down to your local environment.
+
+```bash
+git clone git@github.com:YOURUSERNAME/YOURUSERNAME.github.io.git
+```
+
 
 ## Hugo
 
-First things first. You need to get Hugo up and running and become familiar enough with it. Use the linked guide [above](https://gohugo.io/getting-started/quick-start/) to just try setting up a quick one locally. Once you get a feel you can start by 
+First things first. You need to get Hugo up and running and become familiar enough with it. Use the linked guide [above](https://gohugo.io/getting-started/quick-start/) to just try setting up a quick one locally. Once you get a feel comfortable with how it works with markdown files, then we can initialize it in the repository file we created in previous step.
 
-## The Project
+```bash 
+cd /PATH/TO/YOURUSERNAME.github.io 
+hugo new site ./
 
-This project is created with as minimal tools as possible; Hugo as the website generator and will be served by GitHub.
+```
 
-* Hugo - This is the website framework tooling solution, a static website generator
-* Github/Gitlab Pages Hosted - Since I am setting up a static website, that means no backends - and not servers - needed! So why not use Github or GitLab's pages and actions to handle the hosting and publishing?
+### Congo Theme
 
-### Openness
+Next we will install and set up the theme. As all themes are different, this may not apply to others, so take that with a grain of salt if you are deviating here.
 
-I am always a big fan of Free and Open Source Software, FOSS for short. So where I can, I try my best to leverage systems and tools for that. Granted there comes a time where, well, time isn't as available. Its the well-known adage of FOSS not being free in the cost of time. However, if the system is simple enough and the data portable enough, then it might very well be worth that time and effort to setup and maintain. 
+We need to first pull down the theme, to do this we will use the `git submodule` function. This keeps our tooling from becoming more complex.
 
-### The Framework
+```bash
+cd /PATH/TO/YOURUSERNAME.github.io
+git init
+git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
+```
 
-Needing the site to be maintainable, is key to keeping the project, and thus the site, up and running. So, where I could, I would remove systems that needed my attention to work or stay in good working order. Too many website frameworks required lots of backends, databases and the like, as well as had features I simply didn't care for. I just needed something that was dead simple to set up, run and update with new content when I felt like it. 
+Next we will need to configure Hugo to use this Theme. The [theme's guide](https://jpanther.github.io/congo/docs/installation/) is best to follow, as it will be more up-to-date. But to boil it down you need to copy the `/PATH/TO/YOURUSERNAME.github.io/theme/congo/config/_default` folder to `/PATH/TO/YOURUSERNAME.github.io/`. Now we customize the files as needed.
 
-### The Platform
+* **config.toml** - Your main config file for Hugo where you set your website name, theme (congo) and other settings
+* **languages.en.toml** - Sets your defaults for the site when set in the `en` language.
+* **markup.toml** - Used for the theme, I have not touched this.
+* **menus.en.toml** - Like languages.en.toml, this is the configuration for the menus when set to the `en` language. 
+* **module.toml** - Used for the theme, I have not touched this.
+* **params.toml** - Allows you to further configure the theme. 
 
-In the past I have always set up servers, installed the needed services and then install any applications to get a website up and running. But each of those items introduces complexity and friction. I need to make sure the services are up to date. The database needs to be backed up properly. How do I migrate to a new server if needed, and so on. With the static aspect of Hugo I can avoid this because, in the end, the website is just a bunch of files. And those files are already backed up in Github which is also "publishing them." Overall reducing complexity to make it easier to maintain and use, which is exactly what I want.
+#### Making a Post
 
-## TL;DR
+With this theme, I've decided to set up my posts within their own folders, rather than all under the `./content/` folder. This seems to work best for this theme. So a post will look roughly like this
 
-In short, I have set up a Hugo based static website that I can use Github Pages and Actions to host and manage! I will probably also post a guide incase someone wants to try themselves!
+```bash
+content/posts/building-my-site
+├── img
+│   ├── gh_actions_permissions.png
+│   ├── gh_pages_config.png
+│   └── gh_workflow_permissions.png
+└── index.md
+```
+Notice that the markdown file is named `index.md` and not the name of the post, that is reserved for the folder name. More examples can be found [here](https://jpanther.github.io/congo/docs/content-examples/)
+
+## GitHub Actions
+
+Lastly, once you have a nice site configured, and you've tested it out locally with the `hugo server -D` we can start working on getting the automations going to publish this online.
+
+#### GitHub Actions Workflow File
+
+You can leverage the default one provided by the theme [here](https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages). This should work out of the box for you. Once you add it to your `/PATH/TO/YOURUSERNAME.github.io/.github/workflows/` folder and push it to GitHub you will need to verify it runs successfully.
+
+On GitHub you can navigate to your repository, and then the Actions Page to verify if it is running properly. If not you will want to check the follow settings.
+
+#### GitHub Repository Settings
+
+Make sure your settings are as follows:
+
+![GitHub Actions Permissions](img/gh_actions_permissions.png)
+
+![GitHub Workflow Permissions](img/gh_workflow_permissions.png)
+
+Those should fix it to allow the actions to properly run. Once they do you will now have a `gh_pages` branch that mirror's the contents of the `public` folder that Hugo generates when running the hugo commands.
+
+## DNS
+
+Last but not least, we will now make the site available online! First we finish configuring GitHub, test and then point our domain to it.
+
+### GitHub Pages
+
+Under the repository's settings for Pages you will want to configure it as follows
+
+![GitHub Pages Configuration](img/gh_pages_config.png)
+
+A few things to note, you can only enable SSL enforcement once your custom domain is configured (next step). But this will be fine for now to test. You should now be able to got to YOURUSERNAME.github.io and see your site! If you do then finish configurations on your domain registrar.
+
+### Domain DNS
+
+Per the [details](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) from GitHub you will want to add the follow records to your Domain's DNS provider.
+
+`A Record`
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+`AAAA Record`
+```
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+```
+
+I would avoid using the Alias, as that would block you from using DNSSEC.
+
+At this point you should now be able to go to yourdomain.com and load your github site. If needed, go back to your settings and enable SSL.
+
+# Conclusion
+
+This rough guide is how I have mine set up with tips on how you can do it yourself. Again, it isn't meant to be an end-to-end guide. But over time I will probably update this guide to better clarify or expand items.
