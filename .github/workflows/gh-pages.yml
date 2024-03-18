@@ -1,4 +1,4 @@
-# .github/workflows/build_site.yml
+# .github/workflows/gh-pages.yml
 
 name: GitHub Pages
 
@@ -26,7 +26,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --verbose
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
