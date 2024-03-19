@@ -184,6 +184,11 @@ Per the [details](https://docs.github.com/en/pages/configuring-a-custom-domain-f
 2606:50c0:8003::153
 ```
 
+`CNAME Record`
+```
+www.YOURDOMAIN.com
+```
+
 I would avoid using the Alias, as that would block you from using DNSSEC.
 
 At this point you should now be able to go to yourdomain.com and load your github site. If needed, go back to your settings and enable SSL.
