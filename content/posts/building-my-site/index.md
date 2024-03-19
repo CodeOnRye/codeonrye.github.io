@@ -125,6 +125,19 @@ Lastly, once you have a nice site configured, and you've tested it out locally w
 
 You can leverage the default one provided by the theme [here](https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages). This should work out of the box for you. Once you add it to your `/PATH/TO/YOURUSERNAME.github.io/.github/workflows/` folder and push it to GitHub you will need to verify it runs successfully.
 
+One thing to note here, if you are going to use a custom domain you will want to add a run command into your YAML file to recreate that file like below:
+```YAML
+...
+      - name: Build
+        run: hugo --minify
+
+      - name: GH CNAME
+        run: echo "YOURDOMAIN.COM" > ./public/CNAME
+
+      - name: Deploy
+...
+```
+
 On GitHub you can navigate to your repository, and then the Actions Page to verify if it is running properly. If not you will want to check the follow settings.
 
 #### GitHub Repository Settings
