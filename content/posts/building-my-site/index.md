@@ -151,6 +151,8 @@ A few things to note, you can only enable SSL enforcement once your custom domai
 
 ### Domain DNS
 
+First you should go to your account settings, then under the Pages option on the left sidebar, add your domain there. You will need to verify the domain with a `TXT Record `. 
+
 Per the [details](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) from GitHub you will want to add the follow records to your Domain's DNS provider.
 
 `A Record`
