@@ -14,6 +14,6 @@ My small internet potagerie 🌱
 
 This site is a place for me to cultivate and share. 
 
-Please enjoy your stay.
+Enjoy your stay.
 
 ---
