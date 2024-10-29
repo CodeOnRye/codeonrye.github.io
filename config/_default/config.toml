@@ -8,7 +8,7 @@ theme = "congo"
 
 enableRobotsTXT = true
 pagination.pagerSize = 10
-summaryLength = 1
+summaryLength = 0
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
