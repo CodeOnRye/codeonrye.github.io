@@ -12,4 +12,4 @@ My journey has always been fueled by a desire to create, be it through technolog
 
 Here, you can expect to find a diverse array of content. While I have yet to chart a definitive course for this website, my aim is to cover a range of topics. You'll likely encounter insights on the latest trends in cybersecurity, updates on projects I'm involved in, or even reflections on books that have impacted my thinking.
 
-If you're interested in connecting or discussing any of the content, please don't hesitate to reach out through my contact links. Enjoy your stay!
+If you're interested in connecting or discussing any of the content, please don't hesitate to reach out. Enjoy your stay!
