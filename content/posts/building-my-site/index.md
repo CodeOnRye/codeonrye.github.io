@@ -2,6 +2,7 @@
 title: 'Building My Site'
 date: 2024-03-18T13:23:47+01:00
 tags: ["blog", "hugo", "website", "guide"]
+summary: A scalable site.
 
 ---
 {{< lead >}}

@@ -2,6 +2,7 @@
 title: 'Hide Your Email Services'
 date: 2024-10-29T21:00:00+01:00
 tags: ["blog", "privacy", "security"]
+summary: "Data breaches are a constant, what can you do?"
 
 ---
 {{< lead >}}

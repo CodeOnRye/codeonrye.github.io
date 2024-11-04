@@ -9,6 +9,7 @@ theme = "congo"
 enableRobotsTXT = true
 pagination.pagerSize = 10
 summaryLength = 0
+list.showSummary = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
