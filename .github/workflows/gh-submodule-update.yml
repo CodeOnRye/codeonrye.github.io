@@ -13,11 +13,14 @@ jobs:
       with:
         submodules: recursive # Ensures submodules are checked out
 
-    - name: Update Submodule
+    - name: Fetch and Update Submodule to Specific Version
       run: |
-        git submodule update --remote --merge
+        cd themes/congo
+        git fetch --tags
+        git checkout v2.10.0 # Replace with the desired version or tag
+        cd ../..
         git add themes/congo
-        git commit -m "Update submodule: themes/congo to latest version" || echo "No changes to commit"
+        git commit -m "Update submodule: themes/congo to v2.10.0" || echo "No changes to commit"
 
     - name: Push Changes
       env:
