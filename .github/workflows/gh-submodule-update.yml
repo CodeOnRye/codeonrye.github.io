@@ -1,0 +1,26 @@
+name: Update Submodule
+
+on:
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive # Ensures submodules are checked out
+
+    - name: Update Submodule
+      run: |
+        git submodule update --remote --merge
+        git add themes/congo
+        git commit -m "Update submodule: themes/congo to latest version" || echo "No changes to commit"
+
+    - name: Push Changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push origin HEAD
