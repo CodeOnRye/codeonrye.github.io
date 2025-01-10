@@ -40,6 +40,7 @@ title = "Ryan P. Meyer"
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
     { linkedin = "https://linkedin.com/in/ryanpmeyer" },
+    { bluesky = "https://bsky.app/profile/ryanpmeyer.com"}
     { mastodon = "https://mastodon.ie/@rpm" },
   #   { medium = "https://medium.com/username" },
   #   { mendeley = "https://www.mendeley.com/" },
