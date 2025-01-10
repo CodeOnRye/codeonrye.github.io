@@ -32,14 +32,14 @@
 
 [[main]]
   identifier = "search"
-  weight = 40
+  weight = 99
   [main.params]
     action = "search"
 
 [[main]]
   name = "RSS"
   url = "/index.xml"
-  weight = 99 
+  weight = 40
   [main.params]
     icon = "rss"
 
