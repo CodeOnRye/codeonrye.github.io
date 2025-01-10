@@ -9,23 +9,25 @@ summary: "Revisiting how I use RSS"
 Revisiting how I use RSS
 {{< /lead >}}
 
-Over the years, I’ve had an on-and-off relationship with RSS. Despite the rise of algorithms and curated feeds, I still believe RSS remains one of the best ways to build a personalized feed. Recently, I’ve been reevaluating how RSS fits into my workflows. To better understand what I need from it now, I’ve reflected on what has worked for me in the past—and what hasn’t.
+Over the years, I’ve had an on-and-off relationship with RSS. Despite the rise of algorithms and curated news apps, I still believe RSS remains one of the best ways to build a personalized feed that you own. 
+
+Recently, I’ve been reevaluating how RSS fits into my workflows. To better understand what I need from it now, I’ve reflected on what has worked for me in the past—and what hasn’t.
 
 ## Google Reader
 
-My first real foray into RSS was with Google Reader (RIP [killedbygoogle](https://killedbygoogle.com)). Back then, I used it primarily to track my favorite websites in one place. It wasn’t anything fancy, but it was a start. Unfortunately, a combination of Google shutting down the service and my growing use of Reddit led me to abandon RSS entirely.
+My first real expirence with RSS was with Google Reader ([RIP](https://killedbygoogle.com)). Back then, I used it primarily to track my favorite websites in one place. It wasn’t anything fancy, but it was a start. Unfortunately, a combination of Google shutting down the service and my growing use of Reddit led me to abandon RSS entirely.
 
-Regrettably, I didn’t save my OPML file—a mistake I would repeat in later years.
+Regrettably, I didn’t save my OPML file — a mistake I would repeat.
 
-## TTRSS: A Golden Age
+## TT-RSS: A Golden Age
 
-My next attempt at RSS felt like a golden age. I was deep into learning DevOps skills, deploying various tools and services, and came across [TTRSS](https://tt-rss.org). This highly customizable application allowed me to fine-tune my RSS experience.
+My next attempt at RSS feels like a golden age. I was learning DevOps skills, deploying various tools and services, and came across [TT-RSS](https://tt-rss.org). This highly customizable application allowed me to fine-tune my RSS experience.
 
 Two features stood out:
-1. **Full-article fetching**: This ensured I didn’t have to visit ad-filled or inaccessible websites.
-2. **Scoring system**: I could assign positive or negative points to articles based on their source or content. For example, I might give WebsiteA a score of +5 but reduce points for articles mentioning SubjectA, effectively curating my feed before I even saw it.
+1. **Full-article fetching**: This ensured I didn’t have to visit ad-filled or inaccessible websites. And it provided a consistent reading expirence.
+2. **Scoring system**: I could assign positive or negative points to articles based on their source or content. For example, I might give WebsiteA a score of +5 but reduce points for articles mentioning SubjectA with -10, effectively curating my feed before I even saw it.
 
-While I loved these features, maintaining the system eventually became too time-consuming. I shut it down—and, once again, lost my OPML file.
+While I loved these features, maintaining the system eventually became too time-consuming. I shut it down — and, once again, lost my OPML file.
 
 ## Rediscovering RSS for Productivity
 
@@ -49,15 +51,17 @@ Now, I’m shifting to a simpler, more intentional approach. Here’s what I’v
 
 With these lessons in mind, I’m considering a few options for the future:
 
-### Revive TTRSS
-Setting up TTRSS again could meet most of my needs, especially its scoring system. However, the interface feels outdated compared to other tools. I might explore integrating its curated feed with another app.
+### Revive TT-RSS
+Setting up TT-RSS again could meet most of my needs, especially its scoring system. However, the interface feels outdated compared to other tool, and the extra work to maintain it is not appealing. 
 
 ### Embrace the New Reeder
 The developer of Reeder recently launched a new version with a timeline-based approach. This aligns with my goal of treating articles as transient, rather than something to hoard.
 
-### Refine the Readwise-Reeder Workflow
-By dividing content between Readwise (for in-depth articles) and Reeder (for casual browsing), I could create a more focused system. However, this split approach risks neglecting one platform over the other.
+### Refine the ReadWise Reader Workflow
+By dividing content between Readwise (for in-depth articles and "important" sources) and Reeder (for casual browsing), I could create a more focused system. However, this split approach risks neglecting one platform over the other.
 
 ## Moving Forward
 
-For now, I’m giving [Reeder.app](https://reederapp.com) an honest effort. Its integration with services like BlueSky and Mastodon adds a layer of flexibility I find intriguing. Will this approach work? Perhaps. Things are always changing, but for now, it feels like an engaging way to stay informed, educated, and entertained.
+For now, I’m giving [Reeder.app](https://reederapp.com) an honest effort. Its integration with services like BlueSky and Mastodon adds a layer of connectivity I find interesting, as well as with YouTube. 
+
+Will this approach work? Perhaps. Things are always changing, but for now, it feels like an engaging way to stay informed, educated, and entertained.
