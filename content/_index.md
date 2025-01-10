@@ -11,9 +11,4 @@ cascade:
 {{< lead >}}
 My small internet potagerie 🌱
 {{< /lead >}}
-
-This site is a place for me to cultivate and share. 
-
-Enjoy your stay.
-
 ---
