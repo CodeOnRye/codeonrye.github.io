@@ -37,13 +37,6 @@
     action = "search"
 
 [[main]]
-  name = "RSS"
-  url = "/index.xml"
-  weight = 40
-  [main.params]
-    icon = "rss"
-
-[[main]]
   identifier = "locale"
   weight = 100
   [main.params]
@@ -57,6 +50,14 @@
  name = "Tags"
  pageRef = "tags"
  weight = 10
+
+[[footer]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 20
+  [main.params]
+    icon = "rss"
+
 
 #[[footer]]
 #  name = "Github"
