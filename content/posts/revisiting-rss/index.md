@@ -1,5 +1,5 @@
 ---
-title: 'Revisiting Rss'
+title: 'Revisiting RSS'
 date: 2025-01-10
 tags: ["rss", "pkm"]
 summary: "Revisiting how I use RSS"
