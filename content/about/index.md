@@ -15,3 +15,5 @@ You can expect to (hopefully) find a diverse array of content. While I have yet 
 If you're interested in connecting or discussing any of the content, please don't hesitate to reach out. 
 
 Enjoy your stay!
+
+Note: All information on this website is of my own opinion and not of any affiliation. 
