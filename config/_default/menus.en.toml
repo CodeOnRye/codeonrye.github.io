@@ -61,11 +61,6 @@ weight = 30
   url = "/index.xml"
   weight = 20
 
-[[footer]]
-  name = "Drafts"
-  url = "drafts"
-  weight = 30
-
 #[[footer]]
 #  name = "Github"
 #  url = "https://github.com/codeonrye"
