@@ -2,6 +2,7 @@
 title: 'Hello World'
 date: 2024-01-25T13:23:47+01:00
 tags: ["blog", "hugo", "website"]
+summary: "Hello World."
 
 ---
 {{< lead >}}
