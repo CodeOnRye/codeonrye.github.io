@@ -18,7 +18,12 @@
 [[main]]
   name = "Posts"
   pageRef = "posts"
-  weight = 10
+  weight = 20
+
+[[main]]
+name = "Blogroll"
+pageRef = "Blogroll"
+weight = 30
 
 #[[main]]
 #  name = "Categories"
@@ -56,6 +61,10 @@
   url = "/index.xml"
   weight = 20
 
+[[footer]]
+  name = "Drafts"
+  url = "drafts"
+  weight = 30
 
 #[[footer]]
 #  name = "Github"
