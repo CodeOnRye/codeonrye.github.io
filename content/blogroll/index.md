@@ -11,11 +11,11 @@ Here I will keep a somewhat up to date list of websites that I follow. These wil
 ### [404Media](https://www.404media.co) 
 {{< badge >}}
 {{< icon "circle-info" >}}
-E-mail Walled Content
+  E-mail Walled Content
 {{< /badge >}}
 {{< badge >}}
 {{< icon "triangle-exclamation" >}}
-Some Paywalled Content
+  Some Paywalled Content
 {{< /badge >}}
 
 An independent journalist site that focuses on technology and politics.
@@ -45,18 +45,18 @@ Brian Krebs is a well known writer in the Cyber Security space.
 ### [Kyla's Newsletter](https://kyla.substack.com)
 {{< badge >}}
 {{< icon "triangle-exclamation" >}}
-Substack hosted
+  Substack hosted
 {{< /badge >}}
 Kyla focuses on macroeconomy, crypto, and relevant internet trends, primarily US focused.
 
 ### [Nextlander](https://www.patreon.com/c/nextlander/posts)
 {{< badge >}}
 {{< icon "circle-info" >}}
-Patreon
+  Patreon
 {{< /badge >}}
 {{< badge >}}
-{{< icon "circle-info" >}}
-Podcasts
+{{< icon "headphones" >}}
+  Podcasts
 {{< /badge >}}
 Not really a blog, but I follow them for their video game content.
 
