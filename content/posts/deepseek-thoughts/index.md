@@ -1,11 +1,11 @@
 ---
 title: Thoughts on Deepseek's Impact
-date: 2020-01-01
+date: 2025-02-01
 tags:
   - AI
   - Thoughts
 summary: Exploring the Initial Impact of Deepseek AI
-draft: true
+draft: false
 ---
 {{< lead >}}
 Exploring the Initial Impact of Deepseek AI
