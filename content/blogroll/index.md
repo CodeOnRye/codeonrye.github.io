@@ -55,7 +55,7 @@ Kyla focuses on macroeconomy, crypto, and relevant internet trends, primarily US
   Patreon
 {{< /badge >}}
 {{< badge >}}
-{{< icon "headphones" >}}
+{{< icon "circle-info" >}}
   Podcasts
 {{< /badge >}}
 Not really a blog, but I follow them for their video game content.
