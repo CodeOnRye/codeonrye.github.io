@@ -69,7 +69,7 @@ fingerprintAlgorithm = "sha256"
   showTermCount = true
 
 [fathomAnalytics]
- site = "IZYSOXIN"
+  site = "IZYSOXIN"
 
 [plausibleAnalytics]
   # domain = "blog.yoursite.com"
