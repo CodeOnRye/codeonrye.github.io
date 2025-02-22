@@ -1,8 +1,13 @@
 ---
-title: 'AI doppelgänger Scams'
+title: AI doppelgänger Scams
 date: 2024-12-30
-tags: ["AI", "Fraud", "Scams"]
-summary: 'How Generative AI Improves Scammer Tools'
+tags:
+  - AI
+  - Fraud
+  - Scams
+summary: How Generative AI Improves Scammer Tools
+created: 2025-01-17T17:45
+updated: 2025-02-22T23:05
 ---
 {{< lead >}}
 How Generative AI Improves Scammer Tools
@@ -44,8 +49,6 @@ Also, if you are helping a parent or loved one, then a family account with the p
 This should also be an obvious one, but just don’t click links you don’t trust. These are links randomly texted to you, or just don’t look right (like fedex-com[.]net). 
 
 Now obviously clicking on links in social media is going to happen. Just make sure before you do click. And if you’re a bit suspicious of it. Google the website and the title of the article instead. 
-
--
 
 With that being said, suppose you’re targeted and a bad actor is realistically posing as someone you know. Maybe it’s a phone call, or a voice message, or even as sophisticated as a video call - all leveraging AI tooling. 
 
