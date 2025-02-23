@@ -7,6 +7,7 @@ tags:
   - Thoughts
 summary: My thoughts on the recent Apple news regarding their changes with encryption in the UK.
 draft: false
+blueskythread: 3lismngrte22b
 ---
 {{< lead >}}
 My thoughts on the recent Apple news regarding their changes with encryption in the UK.

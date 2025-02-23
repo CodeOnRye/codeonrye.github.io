@@ -51,7 +51,7 @@ fingerprintAlgorithm = "sha256"
   showTableOfContents = true
   showTaxonomies = false
   showWordCount = false
-  showComments = false
+  showComments = true
   # sharingLinks = ["bluesky", "mastodon", "email"]
 
 [list]
@@ -81,3 +81,4 @@ fingerprintAlgorithm = "sha256"
   # bing = ""
   # pinterest = ""
   # yandex = ""
+

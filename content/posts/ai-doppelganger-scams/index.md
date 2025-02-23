@@ -6,8 +6,7 @@ tags:
   - Fraud
   - Scams
 summary: How Generative AI Improves Scammer Tools
-created: 2025-01-17T17:45
-updated: 2025-02-22T23:05
+blueskythread: 3lek6e3wjkk27
 ---
 {{< lead >}}
 How Generative AI Improves Scammer Tools
