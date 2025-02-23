@@ -1,6 +1,6 @@
 ---
 title: Apple's Encryption Changes in the UK
-date: 2025-02-22
+date: 2025-02-23
 tags:
   - Apple
   - Encryption
