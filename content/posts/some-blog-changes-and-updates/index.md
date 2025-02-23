@@ -1,12 +1,12 @@
 ---
 title: Some blog changes and updates
-date: 2025-02-23
+date: 2025-02-23T16:00:00+00:00
 tags:
   - website
   - blog
 summary: A quick update on site changes.
 draft: false
-blueskythread: 
+blueskythread: 3liubo2e4os2w
 ---
 {{< lead >}}
 A quick update on site changes.
