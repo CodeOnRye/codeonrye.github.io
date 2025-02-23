@@ -1,3 +1,4 @@
 [submodule "themes/congo"]
 	path = themes/congo
-	url = git@github.com:CodeOnRye/congo.git
+	url = https://github.com/CodeOnRye/congo.git
+	branch = dev
