@@ -8,6 +8,7 @@ tags:
   - Coding
 summary: Some thoughts on the vibe coding concept.
 draft: false
+blueskythread: 3lom7k76rlc2o
 ---
 {{< lead >}}
 Some thoughts on the vibe coding concept.
