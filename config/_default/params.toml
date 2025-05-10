@@ -52,7 +52,7 @@ fingerprintAlgorithm = "sha256"
   showTaxonomies = false
   showWordCount = false
   showComments = true
-  # sharingLinks = ["bluesky", "mastodon", "email"]
+  sharingLinks = ["bluesky", "mastodon", "email"]
 
 [list]
   showBreadcrumbs = true
@@ -69,7 +69,7 @@ fingerprintAlgorithm = "sha256"
   showTermCount = true
 
 [fathomAnalytics]
-  site = "IZYSOXIN"
+  site = ""
 
 [plausibleAnalytics]
   # domain = "blog.yoursite.com"

@@ -18,9 +18,8 @@ title = "Ryan P. Meyer"
   headline = "Mistakes Included, No Extra Charge"
   # bio = "A technology enthusiast"
   links = [
-    { email = "mailto:hello@ryanpmeyer.com" },
+    { email = "mailto:hello@ryanpmeyer.eu" },
     { linkedin = "https://linkedin.com/in/ryanpmeyer" },
-    { bluesky = "https://bsky.app/profile/ryanpmeyer.com"},
+    { bluesky = "https://bsky.app/profile/ryanpmeyer.eu"},
     { github = "https://github.com/codeonrye" },
-    { gitlab = "https://gitlab.com/codeonrye" },
   ]
