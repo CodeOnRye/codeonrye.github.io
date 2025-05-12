@@ -4,12 +4,12 @@ date: 2025-05-12
 tags:
   - Tag
   - Tag
-summary: Passwords need to be secure, until they don't.
+summary: Passwords need to be secure, but what about after you're gone?
 draft: false
 blueskythread:
 ---
 {{< lead >}}
-Passwords need to be secure, until they don't.
+Passwords need to be secure, but what about after you're gone?
 {{< /lead >}}
 
 I recently saw a YouTube channel, [Sun Knudsen](https://www.youtube.com/@sunknudsen), pop back up on feed after a bit of a hiatus.  I'd found Sun's channel way back when I was looking for best practices for hardening Firefox or other browsers and applications. I'd not really followed the channel and him coming back up made me curious to see what he has been up to.
