@@ -27,7 +27,7 @@ jobs:
         run: hugo --minify
 
       - name: GH CNAME
-        run: echo "ryanpmeyer.com" > ./public/CNAME
+        run: echo "ryanpmeyer.eu" > ./public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
