@@ -13,7 +13,7 @@ blueskythread: 3lkirnk5wds24
 My thoughts so far on Reeder.app as my RSS Reader.
 {{< /lead >}}
 
-About two months ago [I mentioned](https://ryanpmeyer.com/posts/revisiting-rss/) that I was updating my RSS workflow and decided to test out the new [Reeder.app](https://reederapp.com/). I wanted to provide some updates on my thoughts and RSS process
+About two months ago [I mentioned](https://ryanpmeyer.eu/posts/revisiting-rss/) that I was updating my RSS workflow and decided to test out the new [Reeder.app](https://reederapp.com/). I wanted to provide some updates on my thoughts and RSS process
 ### Design Decisions
 The application itself is a bit of an opinionated look at how RSS, and other feeds in general, should be consumed. Rather than trying to capture everything and let you know what you have read, what you haven't - it focuses on what is new now and consuming that content. This does help with having a high volume of content from your feeds where you just want to see what is happening - but if you want to keep up with a certain feed, this does not support that. 
 #### A more ephemeral RSS
