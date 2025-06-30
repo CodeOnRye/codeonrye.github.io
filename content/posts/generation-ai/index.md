@@ -5,8 +5,8 @@ tags:
   - thoughts
   - AI
 summary: Raising the next generation.
-created: 2025-06-30T11:34
-updated: 2025-06-30T11:34
+draft: false
+blueskythread: 3lsszk3phdk23
 ---
 
 {{< lead >}}
