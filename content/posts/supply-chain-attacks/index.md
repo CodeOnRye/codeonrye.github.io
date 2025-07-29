@@ -1,12 +1,12 @@
 ---
 title: Supply Chain Attacks for the Average Person
 draft: false
-date: 2025-07-20
+date: 2025-07-29
 tags:
   - supply-chain
   - security
 summary: Supply Chain attacks are more than something just a Company needs to consider.
-blueskythread: 
+blueskythread: 3lv52wj5byc2q
 ---
 
 I’ve noticed in the news a lot more upticks on supply chain attacks that exploit people’s natural trust instinct. I want to try to help demystify what this all is for the average person, and hopefully that will help someone better understand what is going on and how they could try to protect themselves.
