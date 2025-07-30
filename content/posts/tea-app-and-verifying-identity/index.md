@@ -7,7 +7,7 @@ tags:
   - data exposure
   - trust
 summary: With the recent Tea App data exposure, I wanted to take a moment to think about the choices on how to verify user identities.
-blueskythread: 
+blueskythread: 3lv7ib3axzc2u
 ---
 ## The Tea App
 
